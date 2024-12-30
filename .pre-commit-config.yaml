@@ -11,14 +11,20 @@ repos:
     rev: v0.5.1
     hooks:
       - id: go-fmt
+        exclude: ^cmd/examples/main.go$
       - id: go-vet
+        exclude: ^cmd/examples/main.go$
       - id: go-imports
+        exclude: ^cmd/examples/main.go$
       - id: go-cyclo
         args: [-over=15]
+        exclude: ^cmd/examples/main.go$
       - id: validate-toml
       - id: no-go-testing
       - id: golangci-lint
+        exclude: ^cmd/examples/main.go$
       - id: go-critic
+        exclude: ^cmd/examples/main.go$
       - id: go-unit-tests
       - id: go-build
       - id: go-mod-tidy
