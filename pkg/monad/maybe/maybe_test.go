@@ -1,4 +1,4 @@
-package functor
+package maybe
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package functor
+package maybe
 
 // Maybe represents an optional value
 type Maybe[T any] struct {

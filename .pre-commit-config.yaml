@@ -15,10 +15,11 @@ repos:
       - id: go-vet
         name: go vet
         entry: go vet
-        files: '^(cmd|internal|pkg)/'
         types: [go]
         language: system
         exclude: ^cmd/examples/main.go$
+        pass_filenames: false
+        args: ['./...']
       - id: go-imports
         exclude: ^cmd/examples/main.go$
       - id: go-cyclo
